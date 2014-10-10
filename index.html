@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dSlider - A Responsive JQuery Slider</title></head>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+<body>
+
+    <div id="slider">
+
+		<figure id="slider_content">
+			<img src="assets/img/1.jpg">
+			<img src="assets/img/2.jpg">
+			<img src="assets/img/3.jpg">
+		</figure>
+
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
+	<script type="text/javascript" src="assets/js/lib/dslider.min.js"></script>
+	<script>
+
+		$(document).ready(function(){
+
+			$('#slider').dSlider({
+
+				easing: Power2.easeInOut,
+				timeInterval: 3000,
+				timeBetweenSlides: 0.8,
+				hasNavAnimation: true,
+				hasArrowNavigation: true,
+				hasDotNavigation: true
+
+			});
+
+		});
+
+	</script>
+</body>
+</html>
